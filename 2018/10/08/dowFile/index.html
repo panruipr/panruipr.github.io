@@ -59,7 +59,7 @@
                     <span>主页</span>
                 </a>
             </li>
-            <li  class=active >
+            <li >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
@@ -80,6 +80,10 @@
             
         </ul>
     </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#下载接口规范"><span class="toc-text">下载接口规范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法说明："><span class="toc-text">方法说明：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参数说明："><span class="toc-text">参数说明：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调用实例："><span class="toc-text">调用实例：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-例"><span class="toc-text">   例:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意事项："><span class="toc-text">注意事项：</span></a></li></ol></li></ol></li></ol>
+</div>
     
 </div>
 
@@ -106,65 +110,47 @@
         
 
 
-<!-- 归档列表 -->
-
-<div class="archives-container">
-
-<div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
-                    <span class="tag-text">2018</span>
-                </span>
-    <ul>
+<div class="post-container">
+    <div class="post-title">
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>10-08</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/10/08/dowFile/">
-                        <span>
-                            Untitled
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>06-05</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/06/05/Hexo-gitHub搭建个人博客/">
-                        <span>
-                            Hexo+gitHub搭建个人博客
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>06-04</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2018/06/04/linux初始安装以及jdk，apache，mysql环境安装部署/">
-                        <span>
-                            linux初始安装以及jdk，apache，mysql环境安装部署
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </li>
-        
+    </div>
 
-    </ul>
-</div>
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-10-08 11:25:39</span></span>
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="下载接口规范"><a href="#下载接口规范" class="headerlink" title="下载接口规范"></a>下载接口规范</h1><h3 id="方法说明："><a href="#方法说明：" class="headerlink" title="方法说明："></a>方法说明：</h3><p><strong>页面流url：</strong> com.phfund.idrep.report.matter.download.flow<br><strong>说明：</strong> 获取服务器文件。</p>
+<h3 id="参数说明："><a href="#参数说明：" class="headerlink" title="参数说明："></a>参数说明：</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">filename</td>
+<td>下载文件的名称</td>
+</tr>
+<tr>
+<td style="text-align:left">filepath</td>
+<td>目标文件服务器所在路径</td>
+</tr>
+</tbody>
+</table>
+<h3 id="调用实例："><a href="#调用实例：" class="headerlink" title="调用实例："></a>调用实例：</h3><h5 id="emsp-emsp-emsp-例"><a href="#emsp-emsp-emsp-例" class="headerlink" title="&emsp;&emsp;&emsp;例:"></a>&emsp;&emsp;&emsp;例:</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/default/com.phfund.idrep.report.matter.download.flow?filename=201809096.xlsx;&amp;filepath=/mw/mwadm/domains/pfAdminServer/applications/default.ear/default.war/doc/2c92984565b2f12c0165bccce4b666b9.xlsx"</span> <span class="attr">id</span>=<span class="string">"downFlexReport"</span> <span class="attr">class</span>=<span class="string">"btn btn-default"</span> <span class="attr">style</span>=<span class="string">"padding: 6px 11px;"</span>&gt;</span>下载模板<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>结果:</strong>可正确下载文件。  </p>
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><p><strong>注意:</strong>参数之间的连接符写&amp;即可，编译之后会自动转成&amp; </p>
 
+        
+        <div id="comment-container">
+        </div>
+    </div>
 </div>
     </div>
 </div>
@@ -239,7 +225,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = ""
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
