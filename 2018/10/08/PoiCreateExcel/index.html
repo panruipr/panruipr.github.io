@@ -132,20 +132,14 @@
     <div class="post-content ">
         <h3 id="使用poi根据模板生成excel"><a href="#使用poi根据模板生成excel" class="headerlink" title="使用poi根据模板生成excel"></a>使用poi根据模板生成excel</h3><hr>
 <h5 id="1-导入相关jar包"><a href="#1-导入相关jar包" class="headerlink" title="1.导入相关jar包"></a>1.导入相关jar包</h5><ul>
-<li><p>poi.jar</p>
-</li>
-<li><p>poi-ooxml.jar</p>
-</li>
-<li><p>poi-examples.jar</p>
-</li>
-<li><p>poi-excelant.jar</p>
-</li>
-<li><p>poi-ooxml-schemas.jar</p>
-</li>
-<li><p>poi-scratchpad.jar</p>
-<p>pom文件相关配置如下，以3.17版本为例。<a href="http://poi.apache.org/download.html" target="_blank" rel="noopener">传送门</a></p>
-</li>
+<li>poi.jar</li>
+<li>poi-ooxml.jar</li>
+<li>poi-examples.jar</li>
+<li>poi-excelant.jar</li>
+<li>poi-ooxml-schemas.jar</li>
+<li>poi-scratchpad.jar</li>
 </ul>
+<p>pom文件相关配置如下，以3.17版本为例。<a href="http://poi.apache.org/download.html" target="_blank" rel="noopener">传送门</a></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.poi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>poi<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.17<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.poi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>poi-ooxml<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.17<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.poi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>poi-examples<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.17<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.poi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>poi-excelant<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.17<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.poi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>poi-ooxml-schemas<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.17<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.poi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>poi-scratchpad<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.17<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h5 id="2-读取模板填充新数据"><a href="#2-读取模板填充新数据" class="headerlink" title="2.读取模板填充新数据"></a>2.读取模板填充新数据</h5><p>HSSFWorkbook是Excel2003版本之前的操作方式，扩展名为.xls</p>
 <p>XSSFWorkbook是Excel2007版本之后的操作方式，扩展名为.xlsx</p>
@@ -166,32 +160,6 @@
 <tr>
 <td style="text-align:left">getRowStyle().getFillForegroundXSSFColor();</td>
 <td style="text-align:left">获取此行的当前背景颜色(excel默认格式所带颜色读取不出来，在excel表中查看当前行背景颜色也为空白)</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>ABCD</th>
-<th style="text-align:center">EFGH</th>
-<th style="text-align:right">IJKL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a</td>
-<td style="text-align:center">b</td>
-<td style="text-align:right">c</td>
-</tr>
-<tr>
-<td>d</td>
-<td style="text-align:center">e</td>
-<td style="text-align:right">f</td>
-</tr>
-<tr>
-<td>g</td>
-<td style="text-align:center">h</td>
-<td style="text-align:right">i</td>
 </tr>
 </tbody>
 </table>
