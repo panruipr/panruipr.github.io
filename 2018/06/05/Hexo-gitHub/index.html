@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="工作与生活，代码与书">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Hexo+gitHub搭建个人博客 - ThrowsException的博客 | ThrowsException&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Work And Life,Code And Book </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/head.jpg" />
+        </div>
+        <div class="name">
+            <i>rui Pan</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-gitHub搭建个人博客，linux系统为centOs7"><span class="toc-text">Hexo+gitHub搭建个人博客，linux系统为centOs7</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装Node-js"><span class="toc-text">1.安装Node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-下载并安装解压到当前文件夹"><span class="toc-text">1.下载并安装解压到当前文件夹</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-配置环境变量-和配置java环境变量差不多"><span class="toc-text">2.配置环境变量(和配置java环境变量差不多)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-检查nodejs是否安装成功"><span class="toc-text">3. 检查nodejs是否安装成功</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-安装hexo和git"><span class="toc-text">2.安装hexo和git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-安装插件"><span class="toc-text">3.安装插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置github-上传代码到git"><span class="toc-text">3.配置github 上传代码到git</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Work And Life,Code And Book </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Hexo+gitHub搭建个人博客
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-06-05 16:31:18</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="Hexo-gitHub搭建个人博客，linux系统为centOs7"><a href="#Hexo-gitHub搭建个人博客，linux系统为centOs7" class="headerlink" title="Hexo+gitHub搭建个人博客，linux系统为centOs7"></a>Hexo+gitHub搭建个人博客，linux系统为centOs7</h2><h3 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1.安装Node.js"></a>1.安装Node.js</h3><h5 id="1-下载并安装解压到当前文件夹"><a href="#1-下载并安装解压到当前文件夹" class="headerlink" title="1.下载并安装解压到当前文件夹"></a>1.下载并安装解压到当前文件夹</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">uname -a  #查看linuxs服务版本信息;</span><br><span class="line">wget https://nodejs.org/dist/v8.11.2/node-v8.11.2-linux-x64.tar.xz 下载安装包</span><br><span class="line">tar -xvf node-v8.11.2-linux-x64.tar.xz    #解压</span><br><span class="line">mv node-v8.11.2-linux-x64.tar.xz  node-v8.11.2  #更名</span><br><span class="line">cd node-v8.11.2  </span><br><span class="line">pwd #获取当前目录路径</span><br></pre></td></tr></table></figure>
+<h5 id="2-配置环境变量-和配置java环境变量差不多"><a href="#2-配置环境变量-和配置java环境变量差不多" class="headerlink" title="2.配置环境变量(和配置java环境变量差不多)"></a>2.配置环境变量(和配置java环境变量差不多)</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/profile</span><br><span class="line">NODE_HOME=/home/xxxx/node-v8.11.2  #添加node的路径</span><br><span class="line">path = :$NODE_HOME/bin	#在path中添加=后面的代码</span><br><span class="line">export NODE_HOME	#导入路径</span><br><span class="line">source profile  #之后执行命令重启配置文件</span><br></pre></td></tr></table></figure>
+<h5 id="3-检查nodejs是否安装成功"><a href="#3-检查nodejs是否安装成功" class="headerlink" title="3. 检查nodejs是否安装成功"></a>3. 检查nodejs是否安装成功</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v    #出现版本信息就证明安装成功</span><br></pre></td></tr></table></figure>
+<h3 id="2-安装hexo和git"><a href="#2-安装hexo和git" class="headerlink" title="2.安装hexo和git"></a>2.安装hexo和git</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir Hexo</span><br><span class="line">cd Hexo</span><br><span class="line">yum install git-core  #安装git并安装依赖包</span><br><span class="line">npm install -g hexo-cli #安装Hexo</span><br><span class="line">hexo init  #初始化Hexo</span><br></pre></td></tr></table></figure>
+<h3 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3.安装插件"></a>3.安装插件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save </span><br><span class="line">npm install hexo-generator-category --save </span><br><span class="line">npm install hexo-generator-tag --save </span><br><span class="line">npm install hexo-server --save </span><br><span class="line">npm install hexo-deployer-git --save </span><br><span class="line">npm install hexo-deployer-heroku --save </span><br><span class="line">npm install hexo-deployer-rsync --save </span><br><span class="line">npm install hexo-deployer-openshift --save </span><br><span class="line">npm install hexo-renderer-marked --save </span><br><span class="line">npm install hexo-renderer-stylus --save </span><br><span class="line">npm install hexo-generator-feed --save </span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>注意：插件必须要安装，不然之后执行命令的时候会报错：没有相关的指令，还有就是安装插件的时候必须在，Hexo文件目录下才能执行。有关Hexo的命令也都是在这个文件目录下执行。</p>
+<p>启动hexo服务</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>测试是否成功，在浏览器种范文locahost:4000默认端口是4000.如果是云服务就ip+port</p>
+<h3 id="3-配置github-上传代码到git"><a href="#3-配置github-上传代码到git" class="headerlink" title="3.配置github 上传代码到git"></a>3.配置github 上传代码到git</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">cd ~/. ssh #检查本机是否存在的shh密钥</span><br><span class="line">ssh-keygen -t -rsa -C ”邮件地址“ #生成ssh密钥，执行一下代码</span><br><span class="line">cat ~/.ssh/id_rsa.pub #找到密钥存放地址</span><br><span class="line">vim _config.yml #配置hexo的配置文件</span><br><span class="line">      deploy:</span><br><span class="line">       type: git</span><br><span class="line">       repository: git@github.com:panruipr/panruipr.github.io.git</span><br><span class="line">       branch: master</span><br><span class="line"><span class="meta">   #</span><span class="bash">这里最好复制粘贴不要手打，冒号后面一定要跟一个空格，不然上传的时候没有任何反应，没有报错，代码也上传不成功,坑了我一个小时！</span></span><br><span class="line">git config --global user.name "panruipr"</span><br><span class="line">git config --global user.email "xxxx@qq.com"</span><br><span class="line"><span class="meta">   #</span><span class="bash">配置git邮件和用户名用来上传代码的时候，不配置会报错  你是谁？</span></span><br><span class="line">hexo d 上传代码</span><br><span class="line">hexo d -g 生成并上传</span><br><span class="line">   	  #上传代码</span><br><span class="line">      #新建博客需要在source/_post文件目录下新建文件</span><br></pre></td></tr></table></figure>
+<p>登录git账户，在setting中add sshkey，将密钥粘贴进去并保存<br>建立一个仓库，项目名称必须是用户名.github.io 这个之后访问博客的地址。一定不能写错<br>最后就可以访问自己的博客了，例如<a href="https://panruipr.github.io">https://panruipr.github.io</a></p>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/bing-tang-xue-li-30">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/5526948638">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/panruipr">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="https://github.com/zhaodazzle/zdazNote">zzy学习笔记</a></span>
+        <span>/</span>
+        
+        <span><a href="http://www.wuliqy.com">QY博客</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = ""
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>
