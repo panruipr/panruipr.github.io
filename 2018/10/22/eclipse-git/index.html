@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="工作与生活，代码与书">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Git的安装以及下载，上传项目以及下载项目 - ThrowsException的博客 | ThrowsException&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Work And Life,Code And Book </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/head.jpg" />
+        </div>
+        <div class="name">
+            <i>rui Pan</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#eclipse中安装git-并从github上传下载项目"><span class="toc-text">eclipse中安装git,并从github上传下载项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-下载git并安装git"><span class="toc-text">1.下载git并安装git</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-生成秘钥"><span class="toc-text">1.生成秘钥</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-复制秘钥到github中"><span class="toc-text">2.复制秘钥到github中</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-设置自己的相关信息"><span class="toc-text">3.设置自己的相关信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-下载github的项目到本地"><span class="toc-text">4.下载github的项目到本地</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-eclipse中导入项目"><span class="toc-text">5.eclipse中导入项目</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-提交项目至github"><span class="toc-text">6.提交项目至github</span></a></li></ol></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Work And Life,Code And Book </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Git的安装以及下载，上传项目以及下载项目
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-10-22 09:27:29</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Java" title="Java">Java</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="eclipse中安装git-并从github上传下载项目"><a href="#eclipse中安装git-并从github上传下载项目" class="headerlink" title="eclipse中安装git,并从github上传下载项目"></a>eclipse中安装git,并从github上传下载项目</h2><h3 id="1-下载git并安装git"><a href="#1-下载git并安装git" class="headerlink" title="1.下载git并安装git"></a>1.下载git并安装git</h3><p>在安装git的时候到最后会有一个选择应用的地方，选择到eclipse等应用中。这样eclipse会默认git的相关配置。</p>
+<h5 id="1-生成秘钥"><a href="#1-生成秘钥" class="headerlink" title="1.生成秘钥"></a>1.生成秘钥</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd  ~/.ssh #查看电脑上是否已经存在ssh秘钥</span><br><span class="line">ssh-keygen -t rsa -C "your_email@youremail.com #输入你github注册时候的地址</span><br><span class="line"><span class="meta">#</span>之后会让你输入两次密码，可以直接按enter跳过也可以输入，之后会生成id_rsa.pub和 idrsa.pub两个文件</span><br></pre></td></tr></table></figure>
+<h5 id="2-复制秘钥到github中"><a href="#2-复制秘钥到github中" class="headerlink" title="2.复制秘钥到github中"></a>2.复制秘钥到github中</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>在github的Settings中的SSH Keys添加本地id_rsa.pub中的秘钥 秘钥是以-ssh 开头 邮箱结尾</span><br><span class="line">ssh -T git@github.com #测试连接</span><br></pre></td></tr></table></figure>
+<h5 id="3-设置自己的相关信息"><a href="#3-设置自己的相关信息" class="headerlink" title="3.设置自己的相关信息"></a>3.设置自己的相关信息</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "Firstname Lastname" #设置你提交的时候使用的用户名</span><br><span class="line">git config --global user.email "your_email@youremail.com" #邮箱最好使用注册时的邮箱</span><br></pre></td></tr></table></figure>
+<h5 id="4-下载github的项目到本地"><a href="#4-下载github的项目到本地" class="headerlink" title="4.下载github的项目到本地"></a>4.下载github的项目到本地</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/username/xxxx.git</span><br></pre></td></tr></table></figure>
+<h5 id="5-eclipse中导入项目"><a href="#5-eclipse中导入项目" class="headerlink" title="5.eclipse中导入项目"></a>5.eclipse中导入项目</h5><p><strong>eclipse:</strong>打开git视图，点击 add an existing local Git repository.选择刚刚克隆下来的项目地址</p>
+<pre><code>点击项目export导项目就可以导入了。
+</code></pre><p><strong>idea</strong>:在idea中点击左上角的vcs选择checke out from Github 填入项目的https地址</p>
+<h5 id="6-提交项目至github"><a href="#6-提交项目至github" class="headerlink" title="6.提交项目至github"></a>6.提交项目至github</h5><p><strong>eclipse:</strong> 右键工程项目之后选择git点击commit and push 这样就会提交到本地仓库的同时提交到Github</p>
+<p><strong>idea:</strong>在idea中点击commit 只会提交到本地仓库，然后在点击vcs，里面会有一个push，确定之后就可以提交至Github，如果要求输入密码就输入之前设置的密码</p>
+<p>注意:如果开发工具中没有设置好对应的配置，idea中在settings—-&gt;git里指定git.exe的路径。</p>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/bing-tang-xue-li-30">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/5526948638">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/panruipr">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="https://github.com/zhaodazzle/zdazNote">zzy学习笔记</a></span>
+        <span>/</span>
+        
+        <span><a href="http://www.wuliqy.com">QY博客</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = ""
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>
