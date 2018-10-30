@@ -11,7 +11,7 @@
 
     <title>
         
-        Git的安装以及下载，上传项目以及下载项目 - ThrowsException的博客 | ThrowsException&#39;s Blog
+        Spring-boot集成mybatis以及mybatis3的xml相关写法 - ThrowsException的博客 | ThrowsException&#39;s Blog
         
     </title>
 
@@ -82,7 +82,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#pring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）"><span class="toc-text">pring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-准备工作（相关jar包）"><span class="toc-text">1.准备工作（相关jar包）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置pom文件，引入maven插件以及mysql-connector"><span class="toc-text">2.配置pom文件，引入maven插件以及mysql-connector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置genneratorConfig-xml设定好生成路径"><span class="toc-text">3.配置genneratorConfig.xml设定好生成路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-运行mybatis-genenrator"><span class="toc-text">3.运行mybatis-genenrator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-简单编写xml文件语法"><span class="toc-text">4.简单编写xml文件语法</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）"><span class="toc-text">Spring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-准备工作（相关jar包）"><span class="toc-text">1.准备工作（相关jar包）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置pom文件，引入maven插件以及mysql-connector"><span class="toc-text">2.配置pom文件，引入maven插件以及mysql-connector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置genneratorConfig-xml设定好生成路径"><span class="toc-text">3.配置genneratorConfig.xml设定好生成路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-运行mybatis-genenrator"><span class="toc-text">3.运行mybatis-genenrator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-简单编写xml文件语法"><span class="toc-text">4.简单编写xml文件语法</span></a></li></ol></li></ol>
 </div>
     
 </div>
@@ -112,7 +112,7 @@
 
 <div class="post-container">
     <div class="post-title">
-        Git的安装以及下载，上传项目以及下载项目
+        Spring-boot集成mybatis以及mybatis3的xml相关写法
     </div>
 
     <div class="post-meta">
@@ -130,7 +130,7 @@
 </span>
     </div>
     <div class="post-content ">
-        <h2 id="pring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）"><a href="#pring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）" class="headerlink" title="pring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）"></a>pring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）</h2><p>思路:mybatis-generator集成在idea开发工具中，首先调用mybatis-generator的maven插件，根据具体数据库路径，文件存放方式配置文件，生成对应的代码文件。so ,首先配置pom.xml将maven插件配置进去。第二步配置generatorCofig.xml文件，让插件运行时按照文件约束来。<br>Game Start</p>
+        <h2 id="Spring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）"><a href="#Spring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）" class="headerlink" title="Spring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）"></a>Spring-boot集成mybatis以及mybatis3的xml相关写法（mybatis-generator自动生成相关文件）</h2><p>思路:mybatis-generator集成在idea开发工具中，首先调用mybatis-generator的maven插件，根据具体数据库路径，文件存放方式配置文件，生成对应的代码文件。so ,首先配置pom.xml将maven插件配置进去。第二步配置generatorCofig.xml文件，让插件运行时按照文件约束来。<br>Game Start</p>
 <h3 id="1-准备工作（相关jar包）"><a href="#1-准备工作（相关jar包）" class="headerlink" title="1.准备工作（相关jar包）"></a>1.准备工作（相关jar包）</h3><p>自动生成jar包Mybatis-Generator <a href="https://github.com/mybatis/generator/releases" target="_blank" rel="noopener">点击传送</a></p>
 <p>连接mysql的数据库驱动Mysql-connector <a href="https://dev.mysql.com/downloads/connector/j/" target="_blank" rel="noopener">点击传送</a></p>
 <p><strong>传说:</strong>下载的时候选择Platform Independent，下载版本貌似6以上的版本生成的文件都只有insert，5以下的版本据说是有的，当然前提是数据库表已设置primary key.</p>
