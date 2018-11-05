@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://panruipr.github.io/2018/06/04/Environmental%20deployment/</loc>
+    
+    <lastmod>2018-11-05T01:44:04.593Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://panruipr.github.io/2018/11/05/meet-reunion/</loc>
+    
+    <lastmod>2018-11-05T01:30:14.956Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://panruipr.github.io/2018/10/22/Spring-Boot-Mybatis/</loc>
     
     <lastmod>2018-10-30T05:30:49.701Z</lastmod>
@@ -26,13 +40,6 @@
     <loc>https://panruipr.github.io/2018/06/05/Hexo-gitHub/</loc>
     
     <lastmod>2018-10-19T08:56:46.103Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://panruipr.github.io/2018/06/04/Environmental%20deployment/</loc>
-    
-    <lastmod>2018-10-19T08:56:46.096Z</lastmod>
     
   </url>
   
